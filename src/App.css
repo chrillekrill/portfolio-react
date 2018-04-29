@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
+
+body {
+  font-family: 'Caveat', cursive;
+}
+
+.App-header {
+  align-items: center;
+  color: white;
+  width: 100%;
+  box-shadow: 0 2px 10px #888888;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.buttons {
+  font-family: 'Nanum Pen Script', cursiv;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 110px;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.Header-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.App-title {
+  font-size: 5em;
+  font-weight: bold;
+}
+
+.App-not-title {
+  font-size: 2em;
+  font-weight: bold;
+}
