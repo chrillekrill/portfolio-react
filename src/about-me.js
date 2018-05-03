@@ -1,21 +1,24 @@
 import React, { Component } from "react";
 
-class aboutMe extends Component {
+class AboutMe extends Component {
   render() {
+    var tempRounded = Math.floor((this.props.weather.temp - 272.15) * 10) / 10
     return (
-      <div>
-        <h2>about me</h2>
-        <p>Cras facilisis urna ornare ex volutpat, et
-        convallis erat elementum. Ut aliquam, ipsum vitae
-        gravida suscipit, metus dui bibendum est, eget rhoncus nibh
-        metus nec massa. Maecenas hendrerit laoreet augue
-        nec molestie. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus.</p>
-
-        <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
+      <div className="d-flex flex-row">
+      <div className="text-center box">
+        <h1 className="font-weight-bold text-uppercase">about me</h1>
+        <img src={require('./me.png')} className="picture round"/>
+        <p>I am an aspiring front end developer that
+        loves to learn new things. <br />
+        Right now I am studying front end at KYH in Stockholm Sweden.
+        <br /> Outside the computer I like playing the guitar even if it&#39;s
+        just a hobby for myself. I also like solving my rubik&#39;s cube
+      </p>
+      </div>
+      <p className="position-absolute">Weather in Stockholm: {tempRounded}°C</p>
       </div>
     );
   }
 }
 
-export default aboutMe;
+export default AboutMe;
